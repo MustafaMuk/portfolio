@@ -1,28 +1,53 @@
-# Portfolio Website
+# Mustafa Mukhtar's Portfolio
 
-Welcome to my personal portfolio website, hosted on GitHub Pages. This project showcases my skills, projects, and professional background, serving as a central hub for potential employers, collaborators, and peers to learn more about me.
+Welcome to my personal portfolio! This website showcases the projects I’ve worked on, my skills, and ways to contact me. I’m currently a second-year Computer Science student in the UK, eager to expand my skills and work on more tech-related projects.
 
-## Features
-- **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
-- **Project Gallery**: Highlights key projects with links to live demos and GitHub repositories.
-- **Contact Section**: Enables visitors to connect with me directly through a contact form or via email.
-- **Resume Download**: Includes a downloadable copy of my CV.
+### Link to Portfolio Website
+You can view my portfolio website here: [Mustafa Mukhtar Portfolio](https://mustafamukhtar.github.io/portfolio/)
 
-## Live Demo
-View the live website here: [Portfolio Website](https://MustafaMuk.github.io/portfolio/ )
-## Technologies Used
-- **HTML5**: Structured the content and layout.
-- **CSS3**: Styled the website with modern, responsive design principles.
-- **JavaScript**: Added interactivity and dynamic features.
-- **GitHub Pages**: Deployed the website for live access.
+## Projects
 
-## How to Use
-### Viewing Online
-1. Open the live demo link provided above.
-2. Explore the different sections to learn more about me and my work.
+Here are a few of the projects I’ve worked on:
 
-### Running Locally
-To run this project locally:
-1. Clone this repository to your machine:
-   ```bash
-   git clone https://github.com/MustafaMuk/portfolio-website.git
+### 1. **[Python Data Processing Scripts](https://github.com/MustafaMuk/portfolio)**
+   - **Description**: Developed Python scripts to clean and filter large CSV data files and automate data analysis tasks.
+   - **Technologies used**: Python, Pandas
+   - **Link to GitHub Repository**: [Project Link](https://github.com/MustafaMuk/portfolio)
+
+### 2. **[Automated System Maintenance](https://github.com/MustafaMuk/portfolio)**
+   - **Description**: Created a set of shell scripts for automating routine system maintenance tasks like log cleanup and disk usage monitoring.
+   - **Technologies used**: Shell scripting, Linux
+   - **Link to GitHub Repository**: [Project Link](https://github.com/MustafaMuk/portfolio)
+
+### 3. **[SwiftBot Navigation Project](https://github.com/MustafaMuk/portfolio)**
+   - **Description**: Developed a robot navigation system using Java, implementing object-oriented principles like inheritance and polymorphism for autonomous movement.
+   - **Technologies used**: Java, Object-Oriented Programming (OOP)
+   - **Link to GitHub Repository**: [Project Link](https://github.com/MustafaMuk/portfolio)
+
+## Skills
+
+- **Programming Languages**: Python, Java, HTML, CSS, JavaScript
+- **Cloud Computing**: Basic understanding of AWS (EC2, S3)
+- **Operating Systems**: Linux
+- **Version Control**: Git, GitHub
+- **Project Management**: Jira, Trello
+
+## Contact
+
+- **Email**: [mustafa.9mukhtar@gmail.com](mailto:mustafa.9mukhtar@gmail.com)
+- **GitHub**: [MustafaMuk](https://github.com/MustafaMuk)
+- **LinkedIn**: [Mustafa Mukhtar](https://www.linkedin.com/in/mustafa-mukhtar-728414234/)
+
+## About Me
+
+I’m passionate about programming and digital technology. My aim is to become a well-rounded software engineer with a broad understanding of multiple tech domains, including cloud computing, data science, cybersecurity, and more. I’m always open to learning new tools and building innovative projects that solve real-world problems.
+
+## Education
+
+- **University**: Brunel University (2023 - Present)
+  - Currently a second-year student studying Computer Science.
+- **Certifications**:
+  - AWS Cloud Practitioner (In Progress, January 2024)
+  - Google IT Support Professional Certificate (In Progress, February 2025)
+  - Introduction to Cybersecurity (Cisco Networking Academy)
+
