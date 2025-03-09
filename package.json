@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my personal portfolio! This website showcases the projects I’ve worked on, my skills, and ways to contact me. I have a strong interest in DevOps and Cybersecurity, with a focus on automation, cloud computing, and infrastructure management.",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MustafaMuk/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Mustafa Mukhtar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MustafaMuk/portfolio/issues"
+  },
+  "homepage": "https://MustafaMuk.github.io/portfolio/",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
