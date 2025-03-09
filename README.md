@@ -21,14 +21,14 @@ Here are a few of the projects I’ve worked on:
 
 ### 3. **[SwiftBot Navigation Project](https://github.com/MustafaMuk/portfolio)**
    - **Description**: Developed a robot navigation system using Java, implementing object-oriented principles like inheritance and polymorphism for autonomous movement.
-   - **Technologies used**: Java, Object-Oriented Programming (OOP)
+   - **Technologies used**: Java, Object-Oriented Programming (OOP) and a personal project using swift 
    - **Link to GitHub Repository**: [Project Link](https://github.com/MustafaMuk/portfolio)
 
 ## Skills
 
-- **Programming Languages**: Python, Java, HTML, CSS, JavaScript
+- **Programming Languages**: Basic foundation in Python, Java, HTML,swift
 - **Cloud Computing**: Basic understanding of AWS (EC2, S3)
-- **Operating Systems**: Linux
+- **Operating Systems**: Linux 
 - **Version Control**: Git, GitHub
 - **Project Management**: Jira, Trello
 
@@ -44,10 +44,12 @@ I’m passionate about programming and digital technology. My aim is to become a
 
 ## Education
 
-- **University**: Brunel University (2023 - Present)
-  - Currently a second-year student studying Computer Science.
+- **University**: Brunel University (2023 -2024) witthdrawn
+  - Currently on a gap year to find a apprenticeship.
+   - **College**: St Charles College (2021-2023)
+    BTEC IT: Double Distinction (DD) 
 - **Certifications**:
-  - AWS Cloud Practitioner (In Progress, January 2024)
-  - Google IT Support Professional Certificate (In Progress, February 2025)
+  - AWS Cloud Practitioner In Progress
+  - CompTIA A+ Certification – In Progress
   - Introduction to Cybersecurity (Cisco Networking Academy)
 
