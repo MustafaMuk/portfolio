@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,6 +17,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false  # Ensures no authentication issues
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -19,7 +26,7 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm install  # This ensures package-lock.json is used
+        run: npm install
 
       - name: Build Project
         run: npm run build
