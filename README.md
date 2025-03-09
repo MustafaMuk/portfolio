@@ -1,6 +1,11 @@
 # Mustafa Mukhtar's Portfolio
 
-Welcome to my personal portfolio! This website showcases the projects I’ve worked on, my skills, and ways to contact me. I’m currently a second-year Computer Science student in the UK, eager to expand my skills and work on more tech-related projects.
+Welcome to my personal portfolio! This website showcases the projects I’ve worked on, my skills, and ways to contact me.  
+I have a strong interest in **DevOps and Cybersecurity**, with a focus on automation, cloud computing, and infrastructure management.  
+
+I'm currently expanding my knowledge in **CI/CD pipelines, containerization, and cloud platforms** while actively applying for **tech apprenticeships** to gain hands-on industry experience.  
+
+This portfolio serves as a collection of my projects, learning progress, and contributions to the tech community.  
 
 ### Link to Portfolio Website
 You can view my portfolio website here: [Mustafa Mukhtar Portfolio](https://mustafamukhtar.github.io/portfolio/)
