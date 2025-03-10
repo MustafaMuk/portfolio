@@ -8,7 +8,7 @@ I'm currently expanding my knowledge in **CI/CD pipelines, containerization, and
 This portfolio serves as a collection of my projects, learning progress, and contributions to the tech community.  
 
 ### Link to Portfolio Website
-You can view my portfolio website here: [Mustafa Mukhtar Portfolio](https://mustafamukhtar.github.io/portfolio/)
+You can view my portfolio website here: [Mustafa Mukhtar Portfolio](https://MustafaMuk.github.io/portfolio/)
 
 ## Projects
 
