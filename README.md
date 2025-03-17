@@ -49,7 +49,7 @@ I’m passionate about programming and digital technology. My aim is to become a
 
 ## Education
 
-- **University**: Brunel University (2023 -2024) witthdrawn
+- **University**: Brunel University (2023 -2024) withdrawn
   - Currently on a gap year to find a apprenticeship.
    - **College**: St Charles College (2021-2023)
     BTEC IT: Double Distinction (DD) 
