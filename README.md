@@ -1,60 +1,63 @@
-# Mustafa Mukhtar's Portfolio
+Welcome to my portfolio repository! This serves as a central hub showcasing my technical skills, foundational projects, and career aspirations as I continue advancing in DevOps, Cybersecurity, and Cloud Computing.
 
-Welcome to my personal portfolio! This website showcases the projects I’ve worked on, my skills, and ways to contact me.  
-I have a strong interest in **DevOps and Cybersecurity**, with a focus on automation, cloud computing, and infrastructure management.  
+🔹 About Me
+Background: Former Computer Science student at Brunel University, now independently mastering DevOps and Cybersecurity through structured self-learning and hands-on projects.
+Certifications & Training: Currently expanding my expertise in AWS, Terraform, Kubernetes, and CI/CD.
+Career Goal: To transition into a professional DevOps or Cloud Engineer role, leveraging my foundational projects and technical problem-solving abilities.
+Tech Stack:
+🖥 Cloud Platforms: AWS, Azure
+⚙ Infrastructure as Code: Terraform, Kubernetes, Docker
+🚀 Automation & CI/CD: GitHub Actions, Jenkins
+🛡 Cybersecurity: Basic Network Security, Linux Hardening
+📜 Programming & Scripting: Python, Bash, YAML
+🚀 Key Projects & Experience
+These projects reflect my ability to implement real-world solutions using DevOps, Cloud, and Infrastructure as Code.
 
-I'm currently expanding my knowledge in **CI/CD pipelines, containerization, and cloud platforms** while actively applying for **tech apprenticeships** to gain hands-on industry experience.  
+1️⃣ Kubernetes Minikube Deployment
+📌 Tech Used: Kubernetes, Minikube, Nginx
+🔗 GitHub Repository
+✅ Deployed an Nginx web server using Kubernetes Minikube, demonstrating container orchestration, service exposure, and scaling.
 
-This portfolio serves as a collection of my projects, learning progress, and contributions to the tech community.  
+2️⃣ Terraform EC2 Setup
+📌 Tech Used: Terraform, AWS EC2, Infrastructure as Code
+🔗 GitHub Repository
+✅ Deployed an AWS EC2 instance using Terraform, automating infrastructure provisioning.
 
-### Link to Portfolio Website
-You can view my portfolio website here: [Mustafa Mukhtar Portfolio](https://MustafaMuk.github.io/portfolio/)
+3️⃣ Containerizing a Web App with Docker
+📌 Tech Used: Docker, Nginx, CI/CD
+🔗 GitHub Repository
+✅ Built a containerized web application, enabling scalable and portable deployment.
 
-## Projects
+4️⃣ GitHub Actions CI/CD Pipeline
+📌 Tech Used: GitHub Actions, YAML
+🔗 GitHub Repository
+✅ Implemented an automated CI/CD workflow to deploy portfolio updates seamlessly.
 
-Here are a few of the projects I’ve worked on:
+5️⃣ Automated Web Scraping
+📌 Tech Used: Python, BeautifulSoup
+🔗 GitHub Repository
+✅ Developed a web scraper to extract live data from Wikipedia.
 
-### 1. **[Python Data Processing Scripts](https://github.com/MustafaMuk/portfolio)**
-   - **Description**: Developed Python scripts to clean and filter large CSV data files and automate data analysis tasks.
-   - **Technologies used**: Python, Pandas
-   - **Link to GitHub Repository**: [Project Link](https://github.com/MustafaMuk/portfolio)
+🔹 Education & Certifications
+🎓 BTEC Level 3 National Diploma in IT – Double Distinction
+📜 AWS, Terraform, Linux, and Kubernetes Self-Learning
+🚀 Continuous Hands-on Training & Project-Based Learning
 
-### 2. **[Automated System Maintenance](https://github.com/MustafaMuk/portfolio)**
-   - **Description**: Created a set of shell scripts for automating routine system maintenance tasks like log cleanup and disk usage monitoring.
-   - **Technologies used**: Shell scripting, Linux
-   - **Link to GitHub Repository**: [Project Link](https://github.com/MustafaMuk/portfolio)
+🌍 Connect With Me
+📧 Email: mustafa.9mukhtar@gmail.com
+🔗 GitHub: MustafaMuk
+💼 LinkedIn: Mustafa Mukhtar
 
-### 3. **[SwiftBot Navigation Project](https://github.com/MustafaMuk/portfolio)**
-   - **Description**: Developed a robot navigation system using Java, implementing object-oriented principles like inheritance and polymorphism for autonomous movement.
-   - **Technologies used**: Java, Object-Oriented Programming (OOP) and a personal project using swift 
-   - **Link to GitHub Repository**: [Project Link](https://github.com/MustafaMuk/portfolio)
+📌 Why This Portfolio?
+This portfolio is a live demonstration of my technical skills, project-based learning, and problem-solving ability. Each project represents a real-world scenario, not just theoretical knowledge. As I continue to develop my skills, this repository will evolve with more advanced projects.
 
-## Skills
+💡 Future Additions:
 
-- **Programming Languages**: Basic foundation in Python, Java, HTML,swift
-- **Cloud Computing**: Basic understanding of AWS (EC2, S3)
-- **Operating Systems**: Linux 
-- **Version Control**: Git, GitHub
-- **Project Management**: Jira, Trello
+Cloud-native deployments with AWS & Azure
+Security-focused DevOps implementations
+Advanced Kubernetes projects
+🔥 Final Thoughts
+This portfolio is more than just a list of projects; it’s a testament to my self-discipline, technical growth, and ability to apply DevOps and Cloud concepts in real-world scenarios. My journey is far from over, and I’m actively pushing myself to achieve proficiency in DevOps engineering and security automation.
 
-## Contact
-
-- **Email**: [mustafa.9mukhtar@gmail.com](mailto:mustafa.9mukhtar@gmail.com)
-- **GitHub**: [MustafaMuk](https://github.com/MustafaMuk)
-- **LinkedIn**: [Mustafa Mukhtar](https://www.linkedin.com/in/mustafa-mukhtar-728414234/)
-
-## About Me
-
-I’m passionate about programming and digital technology. My aim is to become a well-rounded software engineer with a broad understanding of multiple tech domains, including cloud computing, data science, cybersecurity, and more. I’m always open to learning new tools and building innovative projects that solve real-world problems.
-
-## Education
-
-- **University**: Brunel University (2023 -2024) withdrawn
-  - Currently on a gap year to find a apprenticeship.
-   - **College**: St Charles College (2021-2023)
-    BTEC IT: Double Distinction (DD) 
-- **Certifications**:
-  - AWS Cloud Practitioner In Progress
-  - CompTIA A+ Certification – In Progress
-  - Introduction to Cybersecurity (Cisco Networking Academy)
+If you're here to collaborate or discuss opportunities, feel free to reach out! 🚀
 
