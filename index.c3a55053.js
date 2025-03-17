@@ -1,0 +1,2 @@
+document.querySelectorAll("nav a").forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();let t=this.getAttribute("href").substring(1);document.getElementById(t).scrollIntoView({behavior:"smooth",block:"start"})})}),document.addEventListener("DOMContentLoaded",function(){let e=document.querySelectorAll("section"),t=new IntersectionObserver((e,t)=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add("fade-in"),t.unobserve(e.target))})},{rootMargin:"0px",threshold:.2});e.forEach(e=>{t.observe(e)})});
+//# sourceMappingURL=index.c3a55053.js.map
