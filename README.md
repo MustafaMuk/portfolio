@@ -50,8 +50,8 @@ These projects reflect my ability to implement real-world solutions using DevOps
 
 ## **🔹 Education & Certifications**  
 🎓 **BTEC Level 3 National Diploma in IT** – **Double Distinction**  
-📚 **AWS, Terraform, Linux, and Kubernetes Self-Learning**  
-🚀 **Continuous Hands-on Training & Project-Based Learning**  
+📚 **Github and Gitlab Essentials, Introduction to Linux Certifications**  
+🚀 **Continuous Hands-on Training & Project-Based Learning AWS, Terraform, Linux, and Kubernetes Self-Learning**  
 
 ---
 
