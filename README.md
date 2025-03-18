@@ -10,10 +10,10 @@ Welcome to my portfolio repository! This serves as a central hub showcasing my *
 - **Certifications & Training**: Currently expanding my expertise in **AWS, Terraform, Kubernetes, and CI/CD**.
 - **Career Goal**: To transition into a professional **DevOps or Cloud Engineer role**, leveraging my foundational projects and technical problem-solving abilities.
 - **Tech Stack**:  
-  - 🔥 **Cloud Platforms**: AWS, Azure  
-  - ⚙ **Infrastructure as Code**: Terraform, Kubernetes, Docker  
-  - 🚀 **Automation & CI/CD**: GitHub Actions, Jenkins  
-  - 🛡 **Cybersecurity**: Basic Network Security, Linux Hardening  
+  - 🔥 **Cloud Platforms**: Basic understanding AWS,   
+  - ⚙ **Infrastructure as Code**:Basic understanding Terraform, Kubernetes, Docker  
+  - 🚀 **Automation & CI/CD**: Basic understanding GitHub Actions,   
+  - 🛡 **Cybersecurity**: Basic Networking fundementals. IP address Subnetting, TCP UDP 
   - 📚 **Programming & Scripting**: Python, Bash, YAML  
 
 ---
