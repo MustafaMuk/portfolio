@@ -1,80 +1,344 @@
-### **📌 Mustafa Mukhtar - DevOps & Cybersecurity Enthusiast**  
-PORTFOLIO WEBSITE : https://mustafamuk.github.io/portfolio/
-Welcome to my portfolio repository! This serves as a central hub showcasing my **technical skills, foundational projects, and career aspirations** as I continue advancing in **DevOps, Cybersecurity, and Cloud Computing**.
+# Mustafa Mukhtar — DevOps Portfolio
+
+A responsive portfolio website presenting my practical work across Linux administration, Docker networking, monitoring, automation, incident response, cloud fundamentals and CI/CD.
+
+[![Deploy Portfolio to GitHub Pages](https://github.com/MustafaMuk/portfolio/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/MustafaMuk/portfolio/actions/workflows/deploy-pages.yml)
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-View%20Website-45c8ff?style=flat-square)](https://mustafamuk.github.io/portfolio/)
+
+## Live Website
+
+View the deployed portfolio:
+
+**https://mustafamuk.github.io/portfolio/**
+
+## About This Repository
+
+This repository contains the source code and deployment workflow for my DevOps portfolio website.
+
+The site brings together:
+
+- Featured infrastructure and operations projects
+- Additional hands-on technical labs
+- Linux, Docker, networking and monitoring skills
+- Cloud and Infrastructure as Code fundamentals
+- Security and incident-response experience
+- My technical learning progression
+- A repeatable engineering and troubleshooting approach
+
+The portfolio is built from source using Parcel and automatically deployed to GitHub Pages through GitHub Actions.
+
+## Featured DevOps Projects
+
+### 1. Linux Server Operations & Monitoring Lab
+
+A practical Linux operations project combining Bash automation, Nginx administration, system monitoring, cron scheduling and incident recovery.
+
+Key outcomes:
+
+- Collected CPU, memory, disk, uptime and process metrics
+- Monitored Nginx service and HTTP availability
+- Classified system health as healthy, warning or critical
+- Generated and published a responsive HTML dashboard
+- Scheduled the complete monitoring cycle every 15 minutes
+- Simulated an Nginx outage and verified recovery
+- Preserved terminal, dashboard and incident evidence
+
+Repository:
+
+**https://github.com/MustafaMuk/linux-server-ops-monitoring-lab**
 
 ---
 
-## **🔹 About Me**  
+### 2. DevOps Network Reliability & Incident Response Lab
 
-- **Background**: Former Computer Science student at Brunel University, now independently mastering **DevOps** and **Cybersecurity** through structured self-learning and hands-on projects.
-- **Certifications & Training**: Currently expanding my expertise in **AWS, Terraform, Kubernetes, and CI/CD**.
-- **Career Goal**: To transition into a professional **DevOps or Cloud Engineer role**, leveraging my foundational projects and technical problem-solving abilities.
-- **Tech Stack**:  
-  - 🔥 **Cloud Platforms**: Basic understanding AWS,   
-  - ⚙ **Infrastructure as Code**:Basic understanding Terraform, Kubernetes, Docker  
-  - 🚀 **Automation & CI/CD**: Basic understanding GitHub Actions,   
-  - 🛡 **Cybersecurity**: Basic Networking fundementals. IP address Subnetting, TCP UDP 
-  - 📚 **Programming & Scripting**: Python, Bash, YAML  
+A three-container Docker architecture demonstrating reverse proxying, private service communication, network segmentation and controlled failure testing.
 
----
+Architecture:
 
-## **🚀 Key Projects & Experience**
-These projects reflect my ability to implement real-world solutions using DevOps, Cloud, and Infrastructure as Code.
+```text
+User
+  |
+  | localhost:8088
+  v
+Nginx
+  |
+  | edge-network
+  v
+Node.js API
+  |
+  | data-network
+  v
+Redis
+```
 
-### **1️⃣ Kubernetes Minikube Deployment**  
-📌 **Tech Used**: Kubernetes, Minikube, Nginx  
-🔗 [GitHub Repository](https://github.com/MustafaMuk/Kubernetes-Minikube-Deployment)  
-👉 Deployed an Nginx web server using Kubernetes Minikube, demonstrating container orchestration, service exposure, and scaling.
+Key outcomes:
 
-### **2️⃣ Terraform EC2 Setup**  
-📌 **Tech Used**: Terraform, AWS EC2, Infrastructure as Code  
-🔗 [GitHub Repository](https://github.com/MustafaMuk/Terraform-EC2-Setup)  
-👉 Deployed an AWS EC2 instance using Terraform, automating infrastructure provisioning.
+- Exposed only Nginx to the host
+- Isolated Redis on a private internal network
+- Used Docker DNS for service discovery
+- Added health checks for Nginx, the API and Redis
+- Automated network and service verification with Bash
+- Simulated a Redis outage
+- Disconnected the application from its private network
+- Investigated HTTP failures and verified recovery
 
-### **3️⃣ Containerizing a Web App with Docker**  
-📌 **Tech Used**: Docker, Nginx, CI/CD  
-🔗 [GitHub Repository](https://github.com/MustafaMuk/Containerizing-a-Simple-Web-App)  
-👉 Built a containerized web application, enabling scalable and portable deployment.
+Repository:
 
-### **4️⃣ GitHub Actions CI/CD Pipeline**  
-📌 **Tech Used**: GitHub Actions, YAML  
-🔗 [GitHub Repository](https://github.com/MustafaMuk/portfolio)  
-👉 Implemented an automated CI/CD workflow to deploy portfolio updates seamlessly.
-
-### **5️⃣ Automated Web Scraping**  
-📌 **Tech Used**: Python, BeautifulSoup  
-🔗 [GitHub Repository](https://github.com/MustafaMuk/Py-WebScraper)  
-👉 Developed a web scraper to extract live data from Wikipedia.
+**https://github.com/MustafaMuk/devops-network-reliability-lab**
 
 ---
 
-## **🔹 Education & Certifications**  
-🎓 **BTEC Level 3 National Diploma in IT** – **Double Distinction**  
-📚 **Github and Gitlab Essentials, Introduction to Linux Certifications**  
-🚀 **Continuous Hands-on Training & Project-Based Learning AWS, Terraform, Linux, and Kubernetes Self-Learning**  
+### 3. Linux Foundations Lab
+
+A structured Linux learning project covering essential administration, troubleshooting and command-line skills.
+
+Key areas:
+
+- Files and directories
+- Users and groups
+- Permissions and ownership
+- Processes and services
+- Package management
+- Storage and system information
+- Bash scripting
+- Git version control
+- Technical evidence and documentation
+
+Repository:
+
+**https://github.com/MustafaMuk/linux-foundations-lab**
+
+## Additional Hands-On Labs
+
+The portfolio also includes smaller focused projects covering:
+
+| Area | Project |
+|---|---|
+| Infrastructure as Code | Terraform EC2 Setup |
+| Container orchestration | Kubernetes Minikube Deployment |
+| Linux security | Linux Hardening Lab |
+| Networking | Virtual Network Lab |
+| Docker collaboration | Dockerised Node.js pull-request contribution |
+| Security analysis | Login System Threat Model |
+
+These labs demonstrate foundational experience with AWS, Terraform, Kubernetes, Docker, Linux security, networking and threat modelling.
+
+## Technical Skills
+
+### Linux Operations
+
+- Ubuntu and WSL2
+- Bash scripting
+- systemd and `systemctl`
+- `journalctl`
+- cron scheduling
+- Users, groups and permissions
+- Processes, packages and filesystems
+- Service and log troubleshooting
+
+### Containers and Networking
+
+- Docker
+- Docker Compose
+- Container images and Dockerfiles
+- Bridge and internal networks
+- Docker DNS service discovery
+- Port exposure and mapping
+- Nginx reverse proxying
+- Redis
+- Container health checks
+
+### Automation and CI/CD
+
+- Git and GitHub
+- Branch-based workflows
+- Pull requests
+- Release tags
+- Bash automation
+- GitHub Actions
+- Parcel production builds
+- GitHub Pages deployment
+
+### Monitoring and Incident Response
+
+- HTTP health checks
+- Service monitoring
+- Log investigation
+- Controlled failure testing
+- Root-cause investigation
+- Recovery verification
+- Incident evidence
+- Troubleshooting runbooks
+
+### Cloud and Infrastructure as Code
+
+Foundational experience with:
+
+- AWS
+- EC2
+- Terraform
+- HCL
+- Infrastructure provisioning concepts
+- Cloud networking fundamentals
+
+### Security Fundamentals
+
+- Linux hardening
+- UFW
+- Fail2Ban
+- SSH hardening
+- Least privilege
+- Network segmentation
+- Threat modelling
+
+## Engineering Approach
+
+My projects follow a repeatable operational workflow:
+
+```text
+Plan
+  ↓
+Build
+  ↓
+Verify normal operation
+  ↓
+Introduce a controlled failure
+  ↓
+Investigate services, logs and networking
+  ↓
+Recover the system
+  ↓
+Verify every check passes
+  ↓
+Document and release the result
+```
+
+This approach helps demonstrate more than tool usage. It shows how I build, test, troubleshoot and document complete technical workflows.
+
+## CI/CD Deployment
+
+Changes to the portfolio are developed through Git branches and pull requests.
+
+When changes are merged into `main`, GitHub Actions automatically:
+
+```text
+Checks out the repository
+        ↓
+Installs exact npm dependencies
+        ↓
+Builds the production website with Parcel
+        ↓
+Verifies the generated output
+        ↓
+Uploads the GitHub Pages artifact
+        ↓
+Deploys the live portfolio
+```
+
+Workflow:
+
+```text
+.github/workflows/deploy-pages.yml
+```
+
+The deployment uses GitHub Pages permissions and OpenID Connect rather than a personal access token stored in the workflow.
+
+## Technology Stack
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- npm
+- Parcel
+- Git
+- GitHub
+- GitHub Actions
+- GitHub Pages
+
+## Repository Structure
+
+```text
+portfolio/
+├── .github/
+│   └── workflows/
+│       └── deploy-pages.yml
+├── assets/
+│   └── projects/
+│       └── linux-monitoring-dashboard.png
+├── .gitignore
+├── index.html
+├── style.css
+├── script.js
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+Generated directories such as `node_modules`, `.parcel-cache` and `dist` are excluded from Git.
+
+## Running the Portfolio Locally
+
+### Requirements
+
+- Node.js
+- npm
+
+### Clone the repository
+
+```bash
+git clone https://github.com/MustafaMuk/portfolio.git
+cd portfolio
+```
+
+### Install dependencies
+
+```bash
+npm ci
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:1234
+```
+
+### Create a production build
+
+```bash
+npm run build
+```
+
+The generated website is written to:
+
+```text
+dist/
+```
+
+## Current Development Focus
+
+I am continuing to develop practical experience in:
+
+- AWS infrastructure
+- Terraform
+- Automated application delivery
+- Cloud monitoring
+- CI/CD
+- Linux and platform operations
+
+## Contact
+
+- **Portfolio:** https://mustafamuk.github.io/portfolio/
+- **GitHub:** https://github.com/MustafaMuk
+- **LinkedIn:** https://www.linkedin.com/in/mustafa-mukhtar-728414234/
+- **Email:** mustafa.9mukhtar@gmail.com
 
 ---
 
-## **🌍 Connect With Me**  
-📧 **Email**: [mustafa.9mukhtar@gmail.com](mailto:mustafa.9mukhtar@gmail.com)  
-🔗 **GitHub**: [MustafaMuk](https://github.com/MustafaMuk)  
-💼 **LinkedIn**: [Mustafa Mukhtar](https://www.linkedin.com/in/mustafa-mukhtar-728414234/)
-
----
-
-## **📌 Why This Portfolio?**  
-This portfolio is a **live demonstration** of my **technical skills, project-based learning, and problem-solving ability**. Each project represents a **real-world scenario**, not just theoretical knowledge. As I continue to develop my skills, this repository will evolve with more advanced projects.
-
-💡 **Future Additions**:  
-- Cloud-native deployments with **AWS & Azure**  
-- Security-focused DevOps implementations  
-- Advanced Kubernetes projects  
-
----
-
-### **🔥 Final Thoughts**  
-This portfolio is more than just a list of projects; it’s a **testament to my self-discipline, technical growth, and ability to apply DevOps and Cloud concepts in real-world scenarios**. My journey is far from over, and I’m actively pushing myself to **achieve proficiency in DevOps engineering and security automation**.
-
-If you're here to collaborate or discuss opportunities, feel free to reach out! 🚀
-
-
+Built and maintained by **Mustafa Mukhtar** as part of a practical DevOps and infrastructure engineering portfolio.
