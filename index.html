@@ -1,125 +1,1007 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mustafa Mukhtar - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Mustafa Mukhtar's DevOps portfolio featuring Linux administration, Docker networking, monitoring, automation, incident response and CI/CD projects."
+  >
+
+  <meta name="theme-color" content="#07111f">
+
+  <meta property="og:title" content="Mustafa Mukhtar | DevOps Portfolio">
+  <meta
+    property="og:description"
+    content="Practical DevOps projects covering Linux, Docker, networking, monitoring, automation and incident recovery."
+  >
+  <meta property="og:type" content="website">
+  <meta
+    property="og:url"
+    content="https://mustafamuk.github.io/portfolio/"
+  >
+
+  <title>Mustafa Mukhtar | DevOps Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Mustafa Mukhtar - DevOps & Cybersecurity Enthusiast</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a class="brand" href="#top" aria-label="Mustafa Mukhtar home">
+        <span class="brand-mark">MM</span>
+
+        <span class="brand-text">
+          <strong>Mustafa Mukhtar</strong>
+          <small>DevOps Portfolio</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        class="primary-navigation"
+        id="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="#projects">Projects</a>
+        <a href="#labs">Labs</a>
+        <a href="#skills">Skills</a>
+        <a href="#workflow">Approach</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+
+        <a
+          class="nav-github"
+          href="https://github.com/MustafaMuk"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+          <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section">
+      <div class="container hero-layout">
+        <div class="hero-content" data-reveal>
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            Open to junior DevOps and infrastructure opportunities
+          </div>
+
+          <p class="hero-kicker">Linux · Docker · Networking · Automation</p>
+
+          <h1>
+            I build, monitor and troubleshoot
+            <span>reliable infrastructure.</span>
+          </h1>
+
+          <p class="hero-description">
+            Technology professional developing practical DevOps engineering
+            skills through hands-on Linux administration, container networking,
+            monitoring automation, incident simulation and recovery testing.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              View featured projects
+              <span aria-hidden="true">↓</span>
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://github.com/MustafaMuk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore GitHub
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Portfolio highlights">
+            <div>
+              <strong>3</strong>
+              <span>Featured DevOps labs</span>
+            </div>
+
+            <div>
+              <strong>4+</strong>
+              <span>Controlled incidents tested</span>
+            </div>
+
+            <div>
+              <strong>CI/CD</strong>
+              <span>Automated portfolio deployment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-console" data-reveal>
+          <div class="console-header">
+            <div class="console-dots" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <span>infrastructure-status.sh</span>
+            <span class="console-state">LIVE</span>
+          </div>
+
+          <div class="console-body">
             <p>
-                Hello! I'm Mustafa Mukhtar, a Former Computer Science student at Brunel University. I have a passion for technology and am focused on building foundational skills in programming, cloud computing, and DevOps. I am currently applying for apprenticeships to develop my career further.
+              <span class="console-prompt">$</span>
+              ./verify-platform.sh
             </p>
+
+            <div class="console-divider"></div>
+
+            <p>
+              <span class="console-pass">[PASS]</span>
+              Linux services operational
+            </p>
+
+            <p>
+              <span class="console-pass">[PASS]</span>
+              Nginx endpoint returned HTTP 200
+            </p>
+
+            <p>
+              <span class="console-pass">[PASS]</span>
+              Redis returned PONG
+            </p>
+
+            <p>
+              <span class="console-pass">[PASS]</span>
+              Docker DNS resolution verified
+            </p>
+
+            <p>
+              <span class="console-pass">[PASS]</span>
+              Private network isolation verified
+            </p>
+
+            <div class="console-divider"></div>
+
+            <p class="console-result">
+              Overall result:
+              <strong>HEALTHY</strong>
+            </p>
+          </div>
+
+          <div class="infrastructure-nodes" aria-hidden="true">
+            <div class="infra-node">
+              <span>01</span>
+              <strong>Proxy</strong>
+              <small>Nginx</small>
+            </div>
+
+            <div class="infra-connection"></div>
+
+            <div class="infra-node">
+              <span>02</span>
+              <strong>Application</strong>
+              <small>Node.js</small>
+            </div>
+
+            <div class="infra-connection"></div>
+
+            <div class="infra-node">
+              <span>03</span>
+              <strong>Data</strong>
+              <small>Redis</small>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <h3>Terraform EC2 Setup</h3>
-                <p>Used Terraform to provision an EC2 instance on AWS.</p>
-                <p>Skills: Infrastructure as Code (IaC), AWS, Terraform.</p>
-                <a href="https://github.com/MustafaMuk/Terraform-EC2-Setup" target="_blank">🔗 View on GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>Kubernetes Minikube Deployment</h3>
-                <p>Deployed an Nginx server on a local Kubernetes Minikube cluster.</p>
-                <p>Skills: Kubernetes, Minikube, YAML.</p>
-                <a href="https://github.com/MustafaMuk/Kubernetes-Minikube-Deployment" target="_blank">🔗 View on GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>Containerizing a Simple Web App</h3>
-                <p>Built and deployed a Dockerized Flask web application.</p>
-                <p>Skills: Docker, Flask, Web Development.</p>
-                <a href="https://github.com/MustafaMuk/Containerizing-a-Simple-Web-App" target="_blank">🔗 View on GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>Portfolio Website (with CI/CD)</h3>
-                <p>Created and deployed this portfolio website using GitHub Pages with automated CI/CD.</p>
-                <p>Skills: HTML, CSS, JavaScript, GitHub Actions.</p>
-                <a href="https://github.com/MustafaMuk/portfolio" target="_blank">🔗 View on GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>Python Automation Scripts</h3>
-                <p>Developed scripts for automating repetitive tasks such as file renaming.</p>
-                <p>Skills: Python, Scripting, Automation.</p>
-                <a href="https://github.com/MustafaMuk/Py-Automation" target="_blank">🔗 View on GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>Web Scraper (Python)</h3>
-                <p>Built a web scraper to extract headlines from Wikipedia.</p>
-                <p>Skills: Python, Web Scraping, BeautifulSoup.</p>
-                <a href="https://github.com/MustafaMuk/Py-WebScraper" target="_blank">🔗 View on GitHub</a>
-            </div>
-<div class="project-card">
-  <h3>Linux Hardening Lab</h3>
-  <p>Secured an Ubuntu VM with SSH hardening, UFW, custom ports, and Fail2ban. Demonstrates system hardening fundamentals.</p>
-  <a href="https://github.com/MustafaMuk/linux-hardening-lab" target="_blank">View on GitHub</a>
-</div>
-
-<div class="project-card">
-  <h3>Virtual Network Lab</h3>
-  <p>Simulated a LAN using two Ubuntu VMs with static IPs and routing. Built in VirtualBox with internal-only communication and connectivity testing.</p>
-  <a href="https://github.com/MustafaMuk/virtual-network-lab" target="_blank">View on GitHub</a>
-</div>
-
-<div class="project-card">
-  <h3>Threat Model – Login System</h3>
-  <p>Documented a STRIDE-based threat model for a login system. Identified risks, attack surfaces, and proposed mitigations.</p>
-  <a href="https://github.com/MustafaMuk/threat-model-login-system" target="_blank">View on GitHub</a>
-</div>
-            
- <div class="project">
-     <h3>SwiftBot Navigation (Java)</h3>
-      <p>Developed a control system for a SwiftBot using Java.</p>
-      <p>Skills: Java, Robotics, Algorithm Design.</p>
-      <a href="https://github.com/MustafaMuk/SwiftBot-Navigation" target="_blank">🔗 View on GitHub</a>
-  </div>
-
-        </div>
+    <section class="capability-strip" aria-label="Core technologies">
+      <div class="container capability-list">
+        <span>Linux</span>
+        <span>Bash</span>
+        <span>Docker</span>
+        <span>Docker Compose</span>
+        <span>Nginx</span>
+        <span>systemd</span>
+        <span>GitHub Actions</span>
+        <span>Networking</span>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:mustafa.9mukhtar@gmail.com">mustafa.9mukhtar@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/mustafamukhtar" target="_blank">Mustafa Mukhtar</a></p>
-            <p>GitHub: <a href="https://github.com/MustafaMuk" target="_blank">MustafaMuk</a></p>
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="section-label">Selected work</p>
+            <h2>Featured DevOps projects</h2>
+          </div>
+
+          <p>
+            Each project combines implementation, testing, troubleshooting,
+            documentation and evidence rather than only following a tutorial.
+          </p>
         </div>
+
+        <article class="project-card project-card-featured" data-reveal>
+          <div class="project-image monitoring-image">
+            <img
+              src="assets/projects/linux-monitoring-dashboard.png"
+              alt="Linux Server Operations Dashboard showing a healthy server state"
+            >
+
+            <div class="image-status">
+              <span class="status-dot"></span>
+              Operational
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-meta">
+              <span>01</span>
+              <span>Linux operations · Monitoring</span>
+            </div>
+
+            <h3>Linux Server Operations & Monitoring Lab</h3>
+
+            <p>
+              Built an automated Linux monitoring workflow that collects live
+              system metrics, evaluates Nginx and HTTP availability, classifies
+              health states and publishes a responsive dashboard.
+            </p>
+
+            <ul class="project-outcomes">
+              <li>Bash-based CPU, memory, disk and service checks</li>
+              <li>Scheduled monitoring every 15 minutes with cron</li>
+              <li>Real Nginx outage detection and recovery verification</li>
+            </ul>
+
+            <div class="tag-list">
+              <span>Linux</span>
+              <span>Bash</span>
+              <span>Nginx</span>
+              <span>systemd</span>
+              <span>cron</span>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/MustafaMuk/linux-server-ops-monitoring-lab"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View repository
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-visual network-visual">
+              <div class="network-caption">
+                <span class="network-live-dot"></span>
+                Segmented container architecture
+              </div>
+
+              <div class="network-flow">
+                <div class="network-node public-node">
+                  <span>PUBLIC</span>
+                  <strong>Nginx</strong>
+                  <small>:8088 → :80</small>
+                </div>
+
+                <div class="network-arrow">
+                  <span>edge-network</span>
+                  <i></i>
+                </div>
+
+                <div class="network-node app-node">
+                  <span>APPLICATION</span>
+                  <strong>Node.js API</strong>
+                  <small>:3000</small>
+                </div>
+
+                <div class="network-arrow">
+                  <span>data-network</span>
+                  <i></i>
+                </div>
+
+                <div class="network-node private-node">
+                  <span>PRIVATE</span>
+                  <strong>Redis</strong>
+                  <small>:6379</small>
+                </div>
+              </div>
+
+              <div class="network-rule">
+                Redis isolated from public proxy network
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>02</span>
+                <span>Docker · Networking</span>
+              </div>
+
+              <h3>DevOps Network Reliability & Incident Response Lab</h3>
+
+              <p>
+                Designed a three-container architecture with separate edge and
+                private data networks, internal DNS, health checks and automated
+                network verification.
+              </p>
+
+              <ul class="project-outcomes">
+                <li>Only Nginx exposed to the host</li>
+                <li>Redis isolated on an internal Docker network</li>
+                <li>Outage and network-disconnection incidents documented</li>
+              </ul>
+
+              <div class="tag-list">
+                <span>Docker</span>
+                <span>Compose</span>
+                <span>Networking</span>
+                <span>Redis</span>
+                <span>Nginx</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://github.com/MustafaMuk/devops-network-reliability-lab"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View repository
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-visual terminal-visual">
+              <div class="terminal-topbar">
+                <span></span>
+                <span></span>
+                <span></span>
+                <small>linux-foundations.sh</small>
+              </div>
+
+              <div class="terminal-lines">
+                <p>
+                  <span>$</span>
+                  whoami
+                </p>
+                <p class="terminal-output">colonel</p>
+
+                <p>
+                  <span>$</span>
+                  systemctl is-active nginx
+                </p>
+                <p class="terminal-success">active</p>
+
+                <p>
+                  <span>$</span>
+                  ./scripts/system-report.sh
+                </p>
+                <p class="terminal-success">
+                  Report generated successfully
+                </p>
+
+                <span class="terminal-cursor"></span>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>03</span>
+                <span>Linux foundations</span>
+              </div>
+
+              <h3>Linux Foundations Lab</h3>
+
+              <p>
+                Created a structured Linux learning lab covering files,
+                permissions, processes, packages, users, services, scripting
+                and evidence-driven command practice.
+              </p>
+
+              <ul class="project-outcomes">
+                <li>Linux file and permission administration</li>
+                <li>Process, package and service management</li>
+                <li>Bash scripts and documented command evidence</li>
+              </ul>
+
+              <div class="tag-list">
+                <span>Linux</span>
+                <span>Bash</span>
+                <span>Permissions</span>
+                <span>Processes</span>
+                <span>Git</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://github.com/MustafaMuk/linux-foundations-lab"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View repository
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Mustafa Mukhtar. All Rights Reserved.</p>
-    </footer>
+    <section class="section labs-section" id="labs">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="section-label">Additional experience</p>
+            <h2>Additional hands-on labs</h2>
+          </div>
+
+          <p>
+            Smaller focused projects that broaden my experience across cloud
+            infrastructure, Kubernetes, security, networking and collaborative
+            Docker workflows.
+          </p>
+        </div>
+
+        <div class="labs-grid">
+          <article class="lab-card" data-reveal>
+            <div class="lab-card-top">
+              <span class="lab-icon">TF</span>
+              <span class="lab-level">Foundational</span>
+            </div>
+
+            <p class="lab-category">Infrastructure as Code</p>
+            <h3>Terraform EC2 Provisioning</h3>
+
+            <p>
+              A foundational infrastructure-as-code lab using Terraform to
+              define and manage an AWS EC2 provisioning workflow.
+            </p>
+
+            <div class="lab-tags">
+              <span>Terraform</span>
+              <span>AWS</span>
+              <span>EC2</span>
+              <span>HCL</span>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/MustafaMuk/Terraform-EC2-Provisioning"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View lab
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="lab-card" data-reveal>
+            <div class="lab-card-top">
+              <span class="lab-icon">K8s</span>
+              <span class="lab-level">Foundational</span>
+            </div>
+
+            <p class="lab-category">Container orchestration</p>
+            <h3>Kubernetes Minikube Deployment</h3>
+
+            <p>
+              A local Kubernetes lab focused on deploying and inspecting
+              containerised workloads using Minikube and kubectl.
+            </p>
+
+            <div class="lab-tags">
+              <span>Kubernetes</span>
+              <span>Minikube</span>
+              <span>kubectl</span>
+              <span>Containers</span>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/MustafaMuk/Kubernetes-Minikube-Deployment"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View lab
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="lab-card" data-reveal>
+            <div class="lab-card-top">
+              <span class="lab-icon">SEC</span>
+              <span class="lab-level">Security</span>
+            </div>
+
+            <p class="lab-category">Linux security</p>
+            <h3>Linux Hardening Lab</h3>
+
+            <p>
+              Secured an Ubuntu environment using SSH hardening, UFW,
+              Fail2Ban, unattended updates and Bash-based user auditing.
+            </p>
+
+            <div class="lab-tags">
+              <span>Linux</span>
+              <span>UFW</span>
+              <span>Fail2Ban</span>
+              <span>SSH</span>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/MustafaMuk/linux-hardening-lab"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View lab
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="lab-card" data-reveal>
+            <div class="lab-card-top">
+              <span class="lab-icon">NET</span>
+              <span class="lab-level">Networking</span>
+            </div>
+
+            <p class="lab-category">Virtual infrastructure</p>
+            <h3>Virtual Network Lab</h3>
+
+            <p>
+              Practised isolated virtual-machine networking, static addressing,
+              connectivity verification and network troubleshooting.
+            </p>
+
+            <div class="lab-tags">
+              <span>Networking</span>
+              <span>Ubuntu</span>
+              <span>IP addressing</span>
+              <span>Troubleshooting</span>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/MustafaMuk/virtual-network-lab"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View lab
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="lab-card" data-reveal>
+            <div class="lab-card-top">
+              <span class="lab-icon">DK</span>
+              <span class="lab-level">Contribution</span>
+            </div>
+
+            <p class="lab-category">Docker and Git collaboration</p>
+            <h3>Dockerised Node.js Application</h3>
+
+            <p>
+              Containerised an Express application, verified its runtime
+              behaviour and submitted the work through a GitHub pull request.
+            </p>
+
+            <div class="lab-tags">
+              <span>Docker</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Pull requests</span>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/MustafaMuk/docker-js"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View contribution
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="lab-card" data-reveal>
+            <div class="lab-card-top">
+              <span class="lab-icon">TM</span>
+              <span class="lab-level">Security</span>
+            </div>
+
+            <p class="lab-category">Security analysis</p>
+            <h3>Login System Threat Model</h3>
+
+            <p>
+              Identified assets, trust boundaries, likely threats and
+              mitigations for a login and authentication workflow.
+            </p>
+
+            <div class="lab-tags">
+              <span>Threat modelling</span>
+              <span>Authentication</span>
+              <span>Risk</span>
+              <span>Mitigation</span>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/MustafaMuk/threat-model-login-system"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View lab
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="section-label">Technical toolkit</p>
+            <h2>Skills built through practical work</h2>
+          </div>
+
+          <p>
+            Focused on the tools and operating practices used to deploy,
+            monitor and troubleshoot applications and infrastructure.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card" data-reveal>
+            <span class="skill-number">01</span>
+            <h3>Linux operations</h3>
+            <p>
+              Administration and troubleshooting across services, processes,
+              users, permissions, packages, filesystems and scheduled tasks.
+            </p>
+
+            <div class="skill-tags">
+              <span>Ubuntu</span>
+              <span>Bash</span>
+              <span>systemd</span>
+              <span>journalctl</span>
+              <span>cron</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-number">02</span>
+            <h3>Containers and networking</h3>
+            <p>
+              Container images, multi-service environments, internal DNS,
+              bridge networks, port mapping and reverse proxying.
+            </p>
+
+            <div class="skill-tags">
+              <span>Docker</span>
+              <span>Compose</span>
+              <span>Nginx</span>
+              <span>Redis</span>
+              <span>DNS</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-number">03</span>
+            <h3>Automation and CI/CD</h3>
+            <p>
+              Bash automation, Git workflows, pull requests, release tags,
+              automated builds and GitHub Pages deployment.
+            </p>
+
+            <div class="skill-tags">
+              <span>Bash</span>
+              <span>Git</span>
+              <span>GitHub Actions</span>
+              <span>Parcel</span>
+              <span>CI/CD</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-number">04</span>
+            <h3>Monitoring and incidents</h3>
+            <p>
+              Health checks, HTTP monitoring, logs, controlled failures,
+              root-cause investigation and recovery verification.
+            </p>
+
+            <div class="skill-tags">
+              <span>curl</span>
+              <span>HTTP</span>
+              <span>Logs</span>
+              <span>Health checks</span>
+              <span>Runbooks</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-number">05</span>
+            <h3>Cloud and Infrastructure as Code</h3>
+            <p>
+              Foundational experience defining cloud infrastructure,
+              provisioning AWS resources and working with Terraform configuration.
+            </p>
+
+            <div class="skill-tags">
+              <span>AWS</span>
+              <span>EC2</span>
+              <span>Terraform</span>
+              <span>HCL</span>
+              <span>IaC</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-number">06</span>
+            <h3>Security fundamentals</h3>
+            <p>
+              Linux hardening, firewall configuration, SSH protection,
+              least privilege, network isolation and threat modelling.
+            </p>
+
+            <div class="skill-tags">
+              <span>UFW</span>
+              <span>Fail2Ban</span>
+              <span>SSH</span>
+              <span>Segmentation</span>
+              <span>Threat modelling</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow-section" id="workflow">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="section-label">Operational approach</p>
+            <h2>How I approach technical work</h2>
+          </div>
+
+          <p>
+            My projects follow a repeatable engineering process that includes
+            planning, testing, failure investigation, recovery and documentation.
+          </p>
+        </div>
+
+        <div class="workflow-grid" data-reveal>
+          <article>
+            <span>01</span>
+            <h3>Plan</h3>
+            <p>Define the problem, traffic flow, dependencies and expected outcome.</p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Build</h3>
+            <p>Implement the solution in Git using clear files, branches and commits.</p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Verify</h3>
+            <p>Test services, endpoints, health checks and normal system behaviour.</p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Break</h3>
+            <p>Introduce a controlled failure to confirm the monitoring and design work.</p>
+          </article>
+
+          <article>
+            <span>05</span>
+            <h3>Investigate</h3>
+            <p>Use service state, logs, networking tools and HTTP evidence to find the cause.</p>
+          </article>
+
+          <article>
+            <span>06</span>
+            <h3>Recover</h3>
+            <p>Restore the system and prove that every operational check passes again.</p>
+          </article>
+
+          <article>
+            <span>07</span>
+            <h3>Document</h3>
+            <p>Create architecture notes, runbooks, screenshots and incident evidence.</p>
+          </article>
+
+          <article>
+            <span>08</span>
+            <h3>Release</h3>
+            <p>Publish through GitHub with a clean history and a versioned release.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section journey-section" id="journey">
+      <div class="container journey-layout">
+        <div class="journey-intro" data-reveal>
+          <p class="section-label">My progression</p>
+          <h2>From technical support to infrastructure engineering</h2>
+
+          <p>
+            My background supporting healthcare technology developed my
+            troubleshooting, communication and incident-handling skills.
+            I am now applying those strengths to Linux, cloud and DevOps
+            engineering.
+          </p>
+
+          <a
+            class="text-link"
+            href="https://github.com/MustafaMuk?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View all GitHub repositories
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="timeline" data-reveal>
+          <article>
+            <span class="timeline-marker"></span>
+            <div>
+              <p>Foundation</p>
+              <h3>Linux administration</h3>
+              <span>
+                Files, permissions, processes, users, packages and services.
+              </span>
+            </div>
+          </article>
+
+          <article>
+            <span class="timeline-marker"></span>
+            <div>
+              <p>Operations</p>
+              <h3>Monitoring and automation</h3>
+              <span>
+                Bash health checks, cron scheduling, Nginx and incident recovery.
+              </span>
+            </div>
+          </article>
+
+          <article>
+            <span class="timeline-marker"></span>
+            <div>
+              <p>Containers</p>
+              <h3>Docker and service networking</h3>
+              <span>
+                Container images, Compose, DNS, segmentation and Redis.
+              </span>
+            </div>
+          </article>
+
+          <article>
+            <span class="timeline-marker"></span>
+            <div>
+              <p>Next</p>
+              <h3>Cloud infrastructure and CI/CD</h3>
+              <span>
+                Expanding into AWS, Terraform and automated application delivery.
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-panel" data-reveal>
+        <div>
+          <p class="section-label">Let’s connect</p>
+
+          <h2>
+            Open to junior DevOps, cloud support and infrastructure roles.
+          </h2>
+
+          <p>
+            I’m interested in opportunities where I can contribute my
+            troubleshooting background while continuing to develop in Linux,
+            cloud infrastructure, automation and platform operations.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a
+            class="button button-primary"
+            href="mailto:mustafa.9mukhtar@gmail.com"
+          >
+            Email me
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://www.linkedin.com/in/mustafa-mukhtar-728414234/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://github.com/MustafaMuk"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div>
+        <strong>Mustafa Mukhtar</strong>
+        <p>DevOps and infrastructure portfolio.</p>
+      </div>
+
+      <div class="footer-meta">
+        <span>Built with HTML, CSS and JavaScript</span>
+        <span>Deployed through GitHub Actions</span>
+        <span>© <span id="current-year">2026</span></span>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>

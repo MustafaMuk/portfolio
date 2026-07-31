@@ -4,7 +4,7 @@
   "description": "Welcome to my personal portfolio! This website showcases the projects I’ve worked on, my skills, and ways to contact me. I have a strong interest in DevOps and Cybersecurity, with a focus on automation, cloud computing, and infrastructure management.",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./"
   },
   "repository": {
     "type": "git",
