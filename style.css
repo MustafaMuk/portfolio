@@ -1473,3 +1473,272 @@ ul {
     transform: none;
   }
 }
+
+/* Additional hands-on labs */
+
+.labs-section {
+  border-top: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(69, 200, 255, 0.08), transparent 28%),
+    rgba(5, 16, 28, 0.38);
+}
+
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.lab-card {
+  min-height: 385px;
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-medium);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(18, 45, 71, 0.58),
+      rgba(7, 21, 36, 0.76)
+    );
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.lab-card:hover {
+  border-color: var(--border-bright);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.24);
+}
+
+.lab-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 31px;
+}
+
+.lab-icon {
+  display: grid;
+  min-width: 48px;
+  height: 48px;
+  place-items: center;
+  padding-inline: 10px;
+  border: 1px solid var(--border-bright);
+  border-radius: 12px;
+  background: rgba(69, 200, 255, 0.08);
+  color: var(--primary);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.lab-level {
+  padding: 6px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-family: monospace;
+  font-size: 0.57rem;
+  text-transform: uppercase;
+}
+
+.lab-category {
+  margin-bottom: 8px;
+  color: var(--primary);
+  font-family: monospace;
+  font-size: 0.63rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lab-card h3 {
+  margin-bottom: 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.22;
+}
+
+.lab-card > p:not(.lab-category) {
+  color: var(--text-soft);
+  font-size: 0.8rem;
+}
+
+.lab-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 21px;
+}
+
+.lab-tags span {
+  padding: 5px 8px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  color: #9db4c9;
+  font-family: monospace;
+  font-size: 0.61rem;
+}
+
+.lab-card .project-link {
+  margin-top: auto;
+  padding-top: 27px;
+}
+
+@media (max-width: 1040px) {
+  .labs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .labs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-card {
+    min-height: auto;
+  }
+}
+
+/* Expanded capability grid */
+
+.skills-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.skill-card {
+  min-height: 325px;
+}
+
+@media (max-width: 1040px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Operational workflow */
+
+.workflow-section {
+  border-top: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 80% 45%, rgba(53, 221, 161, 0.07), transparent 30%),
+    rgba(7, 20, 34, 0.48);
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-large);
+  background: rgba(8, 24, 40, 0.72);
+}
+
+.workflow-grid article {
+  position: relative;
+  min-height: 225px;
+  padding: 28px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.workflow-grid article:nth-child(4n) {
+  border-right: 0;
+}
+
+.workflow-grid article:nth-child(n + 5) {
+  border-bottom: 0;
+}
+
+.workflow-grid article::after {
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  z-index: 2;
+  width: 11px;
+  height: 11px;
+  border-top: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
+  background: var(--background-soft);
+  content: "";
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.workflow-grid article:nth-child(4n)::after,
+.workflow-grid article:last-child::after {
+  display: none;
+}
+
+.workflow-grid article > span {
+  display: block;
+  margin-bottom: 39px;
+  color: var(--primary);
+  font-family: monospace;
+  font-size: 0.7rem;
+}
+
+.workflow-grid h3 {
+  margin-bottom: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.08rem;
+}
+
+.workflow-grid p {
+  color: var(--text-soft);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 1040px) {
+  .workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .workflow-grid article:nth-child(4n) {
+    border-right: 1px solid var(--border);
+  }
+
+  .workflow-grid article:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .workflow-grid article:nth-child(n + 5) {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .workflow-grid article:nth-child(n + 7) {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-grid article,
+  .workflow-grid article:nth-child(2n),
+  .workflow-grid article:nth-child(4n),
+  .workflow-grid article:nth-child(n + 7) {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .workflow-grid article:last-child {
+    border-bottom: 0;
+  }
+
+  .workflow-grid article::after {
+    display: none;
+  }
+}
