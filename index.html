@@ -9,15 +9,15 @@
 
   <meta
     name="description"
-    content="Mustafa Mukhtar's DevOps portfolio featuring Linux administration, Docker networking, monitoring, automation, incident response and CI/CD projects."
+    content="Mustafa Mukhtar's Junior DevOps and Cloud Engineer portfolio featuring AWS, Terraform, ECS Fargate, Docker, GitHub Actions, Linux and incident-response projects."
   >
 
   <meta name="theme-color" content="#07111f">
 
-  <meta property="og:title" content="Mustafa Mukhtar | DevOps Portfolio">
+  <meta property="og:title" content="Mustafa Mukhtar | Junior DevOps & Cloud Engineer">
   <meta
     property="og:description"
-    content="Practical DevOps projects covering Linux, Docker, networking, monitoring, automation and incident recovery."
+    content="Hands-on DevOps and cloud engineering projects covering AWS, Terraform, containers, CI/CD, monitoring, security and incident recovery."
   >
   <meta property="og:type" content="website">
   <meta
@@ -25,7 +25,7 @@
     content="https://mustafamuk.github.io/portfolio/"
   >
 
-  <title>Mustafa Mukhtar | DevOps Portfolio</title>
+  <title>Mustafa Mukhtar | Junior DevOps & Cloud Engineer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,7 @@
 
         <span class="brand-text">
           <strong>Mustafa Mukhtar</strong>
-          <small>DevOps Portfolio</small>
+          <small>Junior DevOps / Cloud Engineer</small>
         </span>
       </a>
 
@@ -73,7 +73,7 @@
         aria-label="Primary navigation"
       >
         <a href="#projects">Projects</a>
-        <a href="#labs">Labs</a>
+        <a href="#labs">Earlier Labs</a>
         <a href="#skills">Skills</a>
         <a href="#workflow">Approach</a>
         <a href="#journey">Journey</a>
@@ -98,25 +98,25 @@
         <div class="hero-content" data-reveal>
           <div class="eyebrow">
             <span class="status-dot"></span>
-            Open to junior DevOps and infrastructure opportunities
+            Open to junior DevOps, cloud and infrastructure opportunities
           </div>
 
-          <p class="hero-kicker">Linux · Docker · Networking · Automation</p>
+          <p class="hero-kicker">AWS · Terraform · Docker · GitHub Actions</p>
 
           <h1>
-            I build, monitor and troubleshoot
-            <span>reliable infrastructure.</span>
+            I build, automate and troubleshoot
+            <span>cloud infrastructure.</span>
           </h1>
 
           <p class="hero-description">
-            Technology professional developing practical DevOps engineering
-            skills through hands-on Linux administration, container networking,
-            monitoring automation, incident simulation and recovery testing.
+            Technology professional with a healthcare support background, now
+            applying hands-on AWS, Terraform, container, CI/CD and incident-response
+            skills to practical infrastructure engineering projects.
           </p>
 
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">
-              View featured projects
+              View CareFlow
               <span aria-hidden="true">↓</span>
             </a>
 
@@ -133,18 +133,18 @@
 
           <div class="hero-metrics" aria-label="Portfolio highlights">
             <div>
-              <strong>3</strong>
-              <span>Featured DevOps labs</span>
+              <strong>AWS</strong>
+              <span>ECS Fargate · RDS · CloudFront</span>
             </div>
 
             <div>
-              <strong>4+</strong>
-              <span>Controlled incidents tested</span>
+              <strong>IaC</strong>
+              <span>Terraform-managed infrastructure</span>
             </div>
 
             <div>
               <strong>CI/CD</strong>
-              <span>Automated portfolio deployment</span>
+              <span>OIDC · Trivy · ECR · ECS</span>
             </div>
           </div>
         </div>
@@ -157,41 +157,41 @@
               <span></span>
             </div>
 
-            <span>infrastructure-status.sh</span>
+            <span>careflow-health.sh</span>
             <span class="console-state">LIVE</span>
           </div>
 
           <div class="console-body">
             <p>
               <span class="console-prompt">$</span>
-              ./verify-platform.sh
+              curl -fsS /health/ready
             </p>
 
             <div class="console-divider"></div>
 
             <p>
               <span class="console-pass">[PASS]</span>
-              Linux services operational
+              CloudFront HTTPS endpoint reachable
             </p>
 
             <p>
               <span class="console-pass">[PASS]</span>
-              Nginx endpoint returned HTTP 200
+              Application Load Balancer target healthy
             </p>
 
             <p>
               <span class="console-pass">[PASS]</span>
-              Redis returned PONG
+              ECS Fargate task running
             </p>
 
             <p>
               <span class="console-pass">[PASS]</span>
-              Docker DNS resolution verified
+              PostgreSQL dependency reachable
             </p>
 
             <p>
               <span class="console-pass">[PASS]</span>
-              Private network isolation verified
+              GitHub Actions deployment verified
             </p>
 
             <div class="console-divider"></div>
@@ -205,24 +205,32 @@
           <div class="infrastructure-nodes" aria-hidden="true">
             <div class="infra-node">
               <span>01</span>
-              <strong>Proxy</strong>
-              <small>Nginx</small>
+              <strong>Edge</strong>
+              <small>CloudFront</small>
             </div>
 
             <div class="infra-connection"></div>
 
             <div class="infra-node">
               <span>02</span>
-              <strong>Application</strong>
-              <small>Node.js</small>
+              <strong>Ingress</strong>
+              <small>ALB</small>
             </div>
 
             <div class="infra-connection"></div>
 
             <div class="infra-node">
               <span>03</span>
+              <strong>Compute</strong>
+              <small>ECS Fargate</small>
+            </div>
+
+            <div class="infra-connection"></div>
+
+            <div class="infra-node">
+              <span>04</span>
               <strong>Data</strong>
-              <small>Redis</small>
+              <small>RDS PostgreSQL</small>
             </div>
           </div>
         </div>
@@ -231,28 +239,166 @@
 
     <section class="capability-strip" aria-label="Core technologies">
       <div class="container capability-list">
-        <span>Linux</span>
-        <span>Bash</span>
+        <span>AWS</span>
+        <span>Terraform</span>
         <span>Docker</span>
-        <span>Docker Compose</span>
-        <span>Nginx</span>
-        <span>systemd</span>
+        <span>ECS Fargate</span>
+        <span>RDS PostgreSQL</span>
         <span>GitHub Actions</span>
-        <span>Networking</span>
+        <span>CloudWatch</span>
+        <span>Linux</span>
       </div>
     </section>
 
-    <section class="section projects-section" id="projects">
+    <section class="section flagship-section" id="projects">
       <div class="container">
         <div class="section-heading" data-reveal>
           <div>
-            <p class="section-label">Selected work</p>
-            <h2>Featured DevOps projects</h2>
+            <p class="section-label">Flagship project</p>
+            <h2>CareFlow — Secure Healthcare ECS Platform</h2>
           </div>
 
           <p>
-            Each project combines implementation, testing, troubleshooting,
-            documentation and evidence rather than only following a tutorial.
+            A Terraform-managed AWS platform built around a synthetic healthcare
+            appointment API, with private networking, automated delivery, security
+            gates, monitoring and tested failure recovery.
+          </p>
+        </div>
+
+        <article class="project-card project-card-featured careflow-featured" data-reveal>
+          <div class="project-visual careflow-visual">
+            <div class="careflow-visual-header">
+              <div>
+                <span class="careflow-overline">CareFlow runtime</span>
+                <strong>AWS application path</strong>
+              </div>
+
+              <span class="careflow-live">
+                <span class="status-dot"></span>
+                Deployed on AWS
+              </span>
+            </div>
+
+            <div class="careflow-flow" aria-label="CloudFront to ALB to ECS Fargate to RDS PostgreSQL">
+              <div class="careflow-node">
+                <span>EDGE</span>
+                <strong>CloudFront</strong>
+                <small>HTTPS</small>
+              </div>
+
+              <div class="careflow-node">
+                <span>INGRESS</span>
+                <strong>ALB</strong>
+                <small>Load balancing</small>
+              </div>
+
+              <div class="careflow-node">
+                <span>COMPUTE</span>
+                <strong>ECS Fargate</strong>
+                <small>Private tasks</small>
+              </div>
+
+              <div class="careflow-node">
+                <span>DATABASE</span>
+                <strong>RDS</strong>
+                <small>PostgreSQL</small>
+              </div>
+            </div>
+
+            <div class="careflow-delivery">
+              <span>GitHub Actions</span>
+              <i>→</i>
+              <span>AWS OIDC</span>
+              <i>→</i>
+              <span>ECR</span>
+              <i>→</i>
+              <span>ECS deploy</span>
+            </div>
+
+            <div class="careflow-security">
+              <span>Private subnets</span>
+              <span>Secrets Manager</span>
+              <span>Trivy gate</span>
+              <span>CloudWatch</span>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-meta">
+              <span>01</span>
+              <span>AWS cloud platform · IaC · CI/CD</span>
+            </div>
+
+            <h3>Infrastructure designed as a complete delivery platform</h3>
+
+            <p>
+              Built and deployed a synthetic healthcare appointment API on AWS,
+              using Terraform to manage the network, compute, database, ingress,
+              monitoring and security layers as one reproducible platform.
+            </p>
+
+            <ul class="project-outcomes">
+              <li>Segmented VPC with private ECS tasks and isolated RDS PostgreSQL</li>
+              <li>GitHub Actions CI/CD using AWS OIDC, Trivy and immutable ECR images</li>
+              <li>CloudWatch monitoring, ECS autoscaling and tested dependency-failure recovery</li>
+            </ul>
+
+            <div class="tag-list">
+              <span>AWS</span>
+              <span>Terraform</span>
+              <span>ECS Fargate</span>
+              <span>RDS</span>
+              <span>Docker</span>
+              <span>GitHub Actions</span>
+            </div>
+
+            <div class="project-actions">
+              <a
+                class="project-link"
+                href="https://github.com/MustafaMuk/secure-healthcare-ecs-platform"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View repository
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                class="project-link"
+                href="https://github.com/MustafaMuk/secure-healthcare-ecs-platform/blob/main/docs/architecture.md"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Architecture
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                class="project-link"
+                href="https://d1qcsm37fkn8r1.cloudfront.net/health/ready"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live health check
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="supporting-projects">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="section-label">Supporting work</p>
+            <h2>Operations and infrastructure foundations</h2>
+          </div>
+
+          <p>
+            Earlier projects that developed the Linux, monitoring, container
+            networking and incident-response skills used in CareFlow.
           </p>
         </div>
 
@@ -271,7 +417,7 @@
 
           <div class="project-content">
             <div class="project-meta">
-              <span>01</span>
+              <span>02</span>
               <span>Linux operations · Monitoring</span>
             </div>
 
@@ -354,7 +500,7 @@
 
             <div class="project-content">
               <div class="project-meta">
-                <span>02</span>
+                <span>03</span>
                 <span>Docker · Networking</span>
               </div>
 
@@ -428,7 +574,7 @@
 
             <div class="project-content">
               <div class="project-meta">
-                <span>03</span>
+                <span>04</span>
                 <span>Linux foundations</span>
               </div>
 
@@ -473,14 +619,13 @@
       <div class="container">
         <div class="section-heading" data-reveal>
           <div>
-            <p class="section-label">Additional experience</p>
-            <h2>Additional hands-on labs</h2>
+            <p class="section-label">Foundation work</p>
+            <h2>Earlier hands-on labs</h2>
           </div>
 
           <p>
-            Smaller focused projects that broaden my experience across cloud
-            infrastructure, Kubernetes, security, networking and collaborative
-            Docker workflows.
+            Focused labs that built breadth across Terraform, Kubernetes,
+            Linux security, networking and collaborative Docker workflows.
           </p>
         </div>
 
@@ -732,33 +877,33 @@
 
           <article class="skill-card" data-reveal>
             <span class="skill-number">03</span>
-            <h3>Automation and CI/CD</h3>
+            <h3>CI/CD and application delivery</h3>
             <p>
-              Bash automation, Git workflows, pull requests, release tags,
-              automated builds and GitHub Pages deployment.
+              GitHub Actions pipelines for tests, container builds, Trivy
+              scanning, AWS OIDC authentication, ECR publishing and ECS deployment.
             </p>
 
             <div class="skill-tags">
-              <span>Bash</span>
               <span>Git</span>
               <span>GitHub Actions</span>
-              <span>Parcel</span>
+              <span>OIDC</span>
+              <span>Trivy</span>
               <span>CI/CD</span>
             </div>
           </article>
 
           <article class="skill-card" data-reveal>
             <span class="skill-number">04</span>
-            <h3>Monitoring and incidents</h3>
+            <h3>Monitoring and incident response</h3>
             <p>
-              Health checks, HTTP monitoring, logs, controlled failures,
+              Health checks, CloudWatch logs and alarms, controlled failures,
               root-cause investigation and recovery verification.
             </p>
 
             <div class="skill-tags">
-              <span>curl</span>
-              <span>HTTP</span>
+              <span>CloudWatch</span>
               <span>Logs</span>
+              <span>Alarms</span>
               <span>Health checks</span>
               <span>Runbooks</span>
             </div>
@@ -768,33 +913,33 @@
             <span class="skill-number">05</span>
             <h3>Cloud and Infrastructure as Code</h3>
             <p>
-              Foundational experience defining cloud infrastructure,
-              provisioning AWS resources and working with Terraform configuration.
+              Designed and provisioned AWS networking, ECS Fargate, RDS,
+              CloudFront, ECR, private endpoints and monitoring with Terraform.
             </p>
 
             <div class="skill-tags">
               <span>AWS</span>
-              <span>EC2</span>
               <span>Terraform</span>
-              <span>HCL</span>
-              <span>IaC</span>
+              <span>ECS</span>
+              <span>RDS</span>
+              <span>CloudFront</span>
             </div>
           </article>
 
           <article class="skill-card" data-reveal>
             <span class="skill-number">06</span>
-            <h3>Security fundamentals</h3>
+            <h3>Platform security</h3>
             <p>
-              Linux hardening, firewall configuration, SSH protection,
-              least privilege, network isolation and threat modelling.
+              Applied least privilege, private subnet design, security-group
+              boundaries, managed secrets, container hardening and vulnerability scanning.
             </p>
 
             <div class="skill-tags">
-              <span>UFW</span>
-              <span>Fail2Ban</span>
-              <span>SSH</span>
-              <span>Segmentation</span>
-              <span>Threat modelling</span>
+              <span>IAM</span>
+              <span>Secrets Manager</span>
+              <span>Security Groups</span>
+              <span>Non-root</span>
+              <span>Trivy</span>
             </div>
           </article>
         </div>
@@ -810,8 +955,9 @@
           </div>
 
           <p>
-            My projects follow a repeatable engineering process that includes
-            planning, testing, failure investigation, recovery and documentation.
+            My projects follow a repeatable engineering process from planning
+            and implementation through verification, failure investigation,
+            recovery, documentation and deployment.
           </p>
         </div>
 
@@ -860,8 +1006,8 @@
 
           <article>
             <span>08</span>
-            <h3>Release</h3>
-            <p>Publish through GitHub with a clean history and a versioned release.</p>
+            <h3>Deploy</h3>
+            <p>Release through automated CI/CD with traceable commits and verification.</p>
           </article>
         </div>
       </div>
@@ -875,10 +1021,10 @@
           <h2>From technical support to infrastructure engineering</h2>
 
           <p>
-            My background supporting healthcare technology developed my
-            troubleshooting, communication and incident-handling skills.
-            I am now applying those strengths to Linux, cloud and DevOps
-            engineering.
+            Supporting healthcare technology developed my troubleshooting,
+            communication and incident-handling habits. I now apply those
+            operational strengths to cloud infrastructure, automation and
+            application delivery.
           </p>
 
           <a
@@ -929,10 +1075,10 @@
           <article>
             <span class="timeline-marker"></span>
             <div>
-              <p>Next</p>
-              <h3>Cloud infrastructure and CI/CD</h3>
+              <p>Cloud & delivery</p>
+              <h3>AWS infrastructure and CI/CD</h3>
               <span>
-                Expanding into AWS, Terraform and automated application delivery.
+                Terraform, ECS Fargate, RDS, CloudFront, GitHub Actions and AWS OIDC.
               </span>
             </div>
           </article>
@@ -946,13 +1092,13 @@
           <p class="section-label">Let’s connect</p>
 
           <h2>
-            Open to junior DevOps, cloud support and infrastructure roles.
+            Open to junior DevOps and cloud engineering opportunities.
           </h2>
 
           <p>
-            I’m interested in opportunities where I can contribute my
-            troubleshooting background while continuing to develop in Linux,
-            cloud infrastructure, automation and platform operations.
+            I’m looking for a role where I can combine my troubleshooting
+            background with hands-on AWS, Terraform, containers, CI/CD and
+            platform operations.
           </p>
         </div>
 
@@ -993,7 +1139,7 @@
     <div class="container footer-layout">
       <div>
         <strong>Mustafa Mukhtar</strong>
-        <p>DevOps and infrastructure portfolio.</p>
+        <p>Junior DevOps and cloud engineering portfolio.</p>
       </div>
 
       <div class="footer-meta">

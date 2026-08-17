@@ -1,238 +1,129 @@
-# Mustafa Mukhtar — DevOps Portfolio
+# Mustafa Mukhtar — Junior DevOps & Cloud Engineer Portfolio
 
-A responsive portfolio website presenting my practical work across Linux administration, Docker networking, monitoring, automation, incident response, cloud fundamentals and CI/CD.
+A responsive portfolio website presenting my practical work across AWS, Terraform,
+Linux, Docker, networking, CI/CD, monitoring, security and incident response.
 
 [![Deploy Portfolio to GitHub Pages](https://github.com/MustafaMuk/portfolio/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/MustafaMuk/portfolio/actions/workflows/deploy-pages.yml)
 [![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-View%20Website-45c8ff?style=flat-square)](https://mustafamuk.github.io/portfolio/)
 
-## Live Website
+## Live Portfolio
 
-View the deployed portfolio:
+https://mustafamuk.github.io/portfolio/
 
-**https://mustafamuk.github.io/portfolio/**
+## Flagship Project — CareFlow
 
-## About This Repository
+CareFlow is a synthetic healthcare appointment platform used as a realistic
+workload for a complete AWS and DevOps implementation.
 
-This repository contains the source code and deployment workflow for my DevOps portfolio website.
+The application runs through:
 
-The site brings together:
+```text
+Internet
+   ↓
+CloudFront
+   ↓
+Application Load Balancer
+   ↓
+ECS Fargate
+   ↓
+RDS PostgreSQL
+```
 
-- Featured infrastructure and operations projects
-- Additional hands-on technical labs
-- Linux, Docker, networking and monitoring skills
-- Cloud and Infrastructure as Code fundamentals
-- Security and incident-response experience
-- My technical learning progression
-- A repeatable engineering and troubleshooting approach
+The platform is managed with Terraform and includes:
 
-The portfolio is built from source using Parcel and automatically deployed to GitHub Pages through GitHub Actions.
-
-## Featured DevOps Projects
-
-### 1. Linux Server Operations & Monitoring Lab
-
-A practical Linux operations project combining Bash automation, Nginx administration, system monitoring, cron scheduling and incident recovery.
-
-Key outcomes:
-
-- Collected CPU, memory, disk, uptime and process metrics
-- Monitored Nginx service and HTTP availability
-- Classified system health as healthy, warning or critical
-- Generated and published a responsive HTML dashboard
-- Scheduled the complete monitoring cycle every 15 minutes
-- Simulated an Nginx outage and verified recovery
-- Preserved terminal, dashboard and incident evidence
+- Segmented public, private application and isolated database subnets
+- ECS Fargate tasks without public IP addresses
+- Private RDS PostgreSQL
+- CloudFront and Application Load Balancer ingress
+- Amazon ECR with immutable container tags
+- AWS Secrets Manager
+- VPC endpoints for private AWS service access
+- CloudWatch logs, dashboards and alarms
+- ECS CPU and memory autoscaling
+- GitHub Actions CI/CD
+- AWS OIDC authentication without stored long-lived AWS keys
+- Trivy container vulnerability scanning
+- Non-root production containers
+- Dependency-aware readiness checks
+- A documented database-connectivity incident and recovery exercise
 
 Repository:
 
-**https://github.com/MustafaMuk/linux-server-ops-monitoring-lab**
-
----
-
-### 2. DevOps Network Reliability & Incident Response Lab
-
-A three-container Docker architecture demonstrating reverse proxying, private service communication, network segmentation and controlled failure testing.
+https://github.com/MustafaMuk/secure-healthcare-ecs-platform
 
 Architecture:
 
-```text
-User
-  |
-  | localhost:8088
-  v
-Nginx
-  |
-  | edge-network
-  v
-Node.js API
-  |
-  | data-network
-  v
-Redis
-```
+https://github.com/MustafaMuk/secure-healthcare-ecs-platform/blob/main/docs/architecture.md
 
-Key outcomes:
+Live health check:
 
-- Exposed only Nginx to the host
-- Isolated Redis on a private internal network
-- Used Docker DNS for service discovery
-- Added health checks for Nginx, the API and Redis
-- Automated network and service verification with Bash
-- Simulated a Redis outage
-- Disconnected the application from its private network
-- Investigated HTTP failures and verified recovery
+https://d1qcsm37fkn8r1.cloudfront.net/health/ready
 
-Repository:
+## Supporting Projects
 
-**https://github.com/MustafaMuk/devops-network-reliability-lab**
+### Linux Server Operations & Monitoring Lab
 
----
+Automated Linux monitoring using Bash, Nginx, systemd and cron, including
+health classification, dashboard generation and outage/recovery testing.
 
-### 3. Linux Foundations Lab
+https://github.com/MustafaMuk/linux-server-ops-monitoring-lab
 
-A structured Linux learning project covering essential administration, troubleshooting and command-line skills.
+### DevOps Network Reliability & Incident Response Lab
 
-Key areas:
+A segmented Docker architecture using Nginx, Node.js and Redis with separate
+networks, service health checks and controlled failure testing.
 
-- Files and directories
-- Users and groups
-- Permissions and ownership
-- Processes and services
-- Package management
-- Storage and system information
-- Bash scripting
-- Git version control
-- Technical evidence and documentation
+https://github.com/MustafaMuk/devops-network-reliability-lab
 
-Repository:
+### Linux Foundations Lab
 
-**https://github.com/MustafaMuk/linux-foundations-lab**
+Structured Linux administration practice covering files, permissions, users,
+processes, packages, services, Bash and Git.
 
-## Additional Hands-On Labs
+https://github.com/MustafaMuk/linux-foundations-lab
 
-The portfolio also includes smaller focused projects covering:
+## Earlier Hands-On Labs
 
-| Area | Project |
-|---|---|
-| Infrastructure as Code | Terraform EC2 Setup |
-| Container orchestration | Kubernetes Minikube Deployment |
-| Linux security | Linux Hardening Lab |
-| Networking | Virtual Network Lab |
-| Docker collaboration | Dockerised Node.js pull-request contribution |
-| Security analysis | Login System Threat Model |
+The portfolio also includes focused labs covering:
 
-These labs demonstrate foundational experience with AWS, Terraform, Kubernetes, Docker, Linux security, networking and threat modelling.
-
-## Technical Skills
-
-### Linux Operations
-
-- Ubuntu and WSL2
-- Bash scripting
-- systemd and `systemctl`
-- `journalctl`
-- cron scheduling
-- Users, groups and permissions
-- Processes, packages and filesystems
-- Service and log troubleshooting
-
-### Containers and Networking
-
-- Docker
-- Docker Compose
-- Container images and Dockerfiles
-- Bridge and internal networks
-- Docker DNS service discovery
-- Port exposure and mapping
-- Nginx reverse proxying
-- Redis
-- Container health checks
-
-### Automation and CI/CD
-
-- Git and GitHub
-- Branch-based workflows
-- Pull requests
-- Release tags
-- Bash automation
-- GitHub Actions
-- Parcel production builds
-- GitHub Pages deployment
-
-### Monitoring and Incident Response
-
-- HTTP health checks
-- Service monitoring
-- Log investigation
-- Controlled failure testing
-- Root-cause investigation
-- Recovery verification
-- Incident evidence
-- Troubleshooting runbooks
-
-### Cloud and Infrastructure as Code
-
-Foundational experience with:
-
-- AWS
-- EC2
-- Terraform
-- HCL
-- Infrastructure provisioning concepts
-- Cloud networking fundamentals
-
-### Security Fundamentals
-
+- Terraform EC2 provisioning
+- Kubernetes with Minikube
 - Linux hardening
-- UFW
-- Fail2Ban
-- SSH hardening
-- Least privilege
-- Network segmentation
+- Virtual networking
+- Docker and Git collaboration
 - Threat modelling
 
-## Engineering Approach
+These projects document the progression from Linux and networking fundamentals
+into cloud infrastructure and automated application delivery.
 
-My projects follow a repeatable operational workflow:
+## Technical Areas
 
-```text
-Plan
-  ↓
-Build
-  ↓
-Verify normal operation
-  ↓
-Introduce a controlled failure
-  ↓
-Investigate services, logs and networking
-  ↓
-Recover the system
-  ↓
-Verify every check passes
-  ↓
-Document and release the result
-```
+- AWS: ECS Fargate, RDS, CloudFront, ALB, ECR, IAM, Secrets Manager, CloudWatch
+- Infrastructure as Code: Terraform and reusable modules
+- Containers: Docker, Docker Compose, multi-stage images and non-root runtimes
+- CI/CD: GitHub Actions, AWS OIDC, ECR and automated ECS deployment
+- Security: Trivy, least privilege, private networking and managed secrets
+- Operations: health checks, logging, alarms, incident investigation and recovery
+- Linux: Bash, systemd, permissions, processes, packages and scheduled tasks
+- Networking: VPC concepts, security groups, DNS, reverse proxies and segmentation
 
-This approach helps demonstrate more than tool usage. It shows how I build, test, troubleshoot and document complete technical workflows.
+## Portfolio Deployment
 
-## CI/CD Deployment
-
-Changes to the portfolio are developed through Git branches and pull requests.
-
-When changes are merged into `main`, GitHub Actions automatically:
+The portfolio itself is built with Parcel and deployed automatically through
+GitHub Actions.
 
 ```text
-Checks out the repository
-        ↓
-Installs exact npm dependencies
-        ↓
-Builds the production website with Parcel
-        ↓
-Verifies the generated output
-        ↓
-Uploads the GitHub Pages artifact
-        ↓
-Deploys the live portfolio
+Push to main
+   ↓
+npm ci
+   ↓
+Parcel production build
+   ↓
+Verify dist output
+   ↓
+Upload GitHub Pages artifact
+   ↓
+Deploy to GitHub Pages
 ```
 
 Workflow:
@@ -240,8 +131,6 @@ Workflow:
 ```text
 .github/workflows/deploy-pages.yml
 ```
-
-The deployment uses GitHub Pages permissions and OpenID Connect rather than a personal access token stored in the workflow.
 
 ## Technology Stack
 
@@ -252,93 +141,32 @@ The deployment uses GitHub Pages permissions and OpenID Connect rather than a pe
 - npm
 - Parcel
 - Git
-- GitHub
 - GitHub Actions
 - GitHub Pages
 
-## Repository Structure
-
-```text
-portfolio/
-├── .github/
-│   └── workflows/
-│       └── deploy-pages.yml
-├── assets/
-│   └── projects/
-│       └── linux-monitoring-dashboard.png
-├── .gitignore
-├── index.html
-├── style.css
-├── script.js
-├── package.json
-├── package-lock.json
-└── README.md
-```
-
-Generated directories such as `node_modules`, `.parcel-cache` and `dist` are excluded from Git.
-
-## Running the Portfolio Locally
-
-### Requirements
-
-- Node.js
-- npm
-
-### Clone the repository
+## Running Locally
 
 ```bash
 git clone https://github.com/MustafaMuk/portfolio.git
 cd portfolio
-```
-
-### Install dependencies
-
-```bash
 npm ci
-```
-
-### Start the development server
-
-```bash
 npm run dev
 ```
 
-Open:
-
-```text
-http://localhost:1234
-```
-
-### Create a production build
+Production build:
 
 ```bash
 npm run build
 ```
 
-The generated website is written to:
-
-```text
-dist/
-```
-
-## Current Development Focus
-
-I am continuing to develop practical experience in:
-
-- AWS infrastructure
-- Terraform
-- Automated application delivery
-- Cloud monitoring
-- CI/CD
-- Linux and platform operations
-
 ## Contact
 
-- **Portfolio:** https://mustafamuk.github.io/portfolio/
-- **GitHub:** https://github.com/MustafaMuk
-- **LinkedIn:** https://www.linkedin.com/in/mustafa-mukhtar-728414234/
-- **Email:** mustafa.9mukhtar@gmail.com
+- Portfolio: https://mustafamuk.github.io/portfolio/
+- GitHub: https://github.com/MustafaMuk
+- LinkedIn: https://www.linkedin.com/in/mustafa-mukhtar-728414234/
+- Email: mustafa.9mukhtar@gmail.com
 
 ---
 
-Built and maintained by **Mustafa Mukhtar** as part of a practical DevOps and infrastructure engineering portfolio.
+Built and maintained by Mustafa Mukhtar as a practical DevOps and cloud
+engineering portfolio.

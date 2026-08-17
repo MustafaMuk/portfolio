@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Welcome to my personal portfolio! This website showcases the projects I’ve worked on, my skills, and ways to contact me. I have a strong interest in DevOps and Cybersecurity, with a focus on automation, cloud computing, and infrastructure management.",
+  "description": "Mustafa Mukhtar's Junior DevOps and Cloud Engineer portfolio featuring AWS, Terraform, Docker, Linux, GitHub Actions, monitoring and incident response.",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html --public-url ./"
@@ -10,7 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/MustafaMuk/portfolio.git"
   },
-  "keywords": [],
+  "keywords": [
+    "devops",
+    "cloud",
+    "aws",
+    "terraform",
+    "docker",
+    "github-actions",
+    "portfolio"
+  ],
   "author": "Mustafa Mukhtar",
   "license": "ISC",
   "bugs": {
